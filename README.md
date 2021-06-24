@@ -26,3 +26,40 @@ It has:
    * name
 
 
+I also made an attempt to make a docker container for it as follows 
+
+Dockerfile
+
+```
+FROM python:3.8-alpine
+ENV PYTHONUNBUFFERED 1
+WORKDIR /app
+ADD . /app
+COPY .requirements.txt /app/requirements.txt
+RUN pip install -r requirements.txt
+COPY . /app/
+     
+```
+
+docker-compose.yml
+
+```
+version: '3'
+
+services: 
+    web:
+        build: .
+        command: python manage.py runserver 0.0.0.0:8000
+        volumes:
+            - .:/code
+        ports: 
+            - "8000:8000"
+```
+
+requiremnts.txt
+
+```
+Django==3.2
+gunicorn==20.1.0
+     
+```
