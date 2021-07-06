@@ -1,0 +1,7 @@
+README.md
+setup.py
+esite_lib.egg-info/PKG-INFO
+esite_lib.egg-info/SOURCES.txt
+esite_lib.egg-info/dependency_links.txt
+esite_lib.egg-info/requires.txt
+esite_lib.egg-info/top_level.txt

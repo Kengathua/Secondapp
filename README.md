@@ -56,10 +56,6 @@ services:
             - "8000:8000"
 ```
 
-requiremnts.txt
+  After setting up a virtual environemnt run
 
-```
-Django==3.2
-gunicorn==20.1.0
-     
-```
+  pip install -r requirements.txt

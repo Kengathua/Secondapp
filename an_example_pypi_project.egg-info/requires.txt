@@ -1,0 +1,10 @@
+beautifulsoup
+django
+numpy
+pandas
+requests
+restframework
+scrapy
+selenium
+urllib3
+websockets
