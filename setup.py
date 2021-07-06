@@ -42,7 +42,7 @@ setup(
     ],
     install_requires=[
         'django',
-        'restframework',
+        'djangorestframework',
         'beautifulsoup4',
         'scrapy',
         'requests',
