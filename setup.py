@@ -2,7 +2,7 @@ import os
 from setuptools import find_packages, setup
 
 # Load the README file to be the dscription of the project
-# It will also use the readme an=s the long description
+# It will also use the readme as the long description
 with open(file="README.md", mode="r") as readme_handle:
     long_description = readme_handle.read()
 
